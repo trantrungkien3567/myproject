@@ -23,7 +23,7 @@
 
 	<div>{{$theloaitruyensangtrangsua->Ten}}</div>
 
-	<form action="/myproject/public/admin/TheLoai/sua/{{$theloaitruyensangtrangsua->id}}"  method="POST">
+	<form action="{{route('suaPost',[$theloaitruyensangtrangsua->id])}}"  method="POST">
 		@csrf 
 		<input type="text" name="Ten" value="{{$theloaitruyensangtrangsua->Ten}}">	
 		<button type="submit"> submit</button>

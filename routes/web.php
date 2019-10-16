@@ -21,7 +21,9 @@ Route::get('thu',function(){
 });
 
 
-
+Route::get('test',function(){
+    return "hello";
+});
 
 
 Route::group(['prefix'=>'admin'],function(){
@@ -29,10 +31,10 @@ Route::group(['prefix'=>'admin'],function(){
 		Route::get('danhsach','TheLoaiController@getDanhSach');
 
 		Route::get('sua/{id}','TheLoaiController@getSua');
-		Route::post('sua/{id}','TheLoaiController@postSua');
+		Route::post('sua/{id}','TheLoaiController@postSua')->name('suaPost');
 
 		Route::get('them','TheLoaiController@getThem');
-		Route::post('themPost','TheLoaiController@postThem');
+		Route::post('themPost','TheLoaiController@postThem')->name('themPost');
 
 		Route::get('xoa/{id}','TheLoaiController@getxoa');
 

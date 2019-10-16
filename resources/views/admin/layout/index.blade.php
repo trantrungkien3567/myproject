@@ -7,7 +7,7 @@
 <body>
 	<!-- Đây là 1 trang giao diện hoàn hảo được cat làm 2 phần và chèn thêm 1 nội dung trang khác ở content-->
 
-	<h2>Đây là giao diện của trang index </h2>
+	<h2 style="color: red ">Đây là giao diện của trang index </h2>
 
 	<!-- <base href="{{asset('')}}"> -->
 
